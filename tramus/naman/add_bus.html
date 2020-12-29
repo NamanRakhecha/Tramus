@@ -1,0 +1,191 @@
+<html>
+<head>
+	<head>
+        <!-- Basic -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tramus -Bus Tracking And Management System</title>
+        <meta name="keywords" content="HTML5 Theme" />
+        <meta name="description" content="Tramus - HTML5 Theme">
+        <meta name="author" content="keenthemes.com">
+
+       
+        
+
+        <!-- Vendor Styles -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Theme Styles -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    </head>
+    <!-- End Head -->
+<style type="text/css">
+    #tracked-bus{
+    	border-width: 3px;
+        border-style: groove;
+        border-color: blue;
+        width: 400px;
+        height: 100px;
+        float: right;
+        background-color: #4285f4;
+
+    }
+     #map {
+        height: 500px;
+        width: 100%;
+
+       }
+</style> <style type="text/css">
+        #box1 {
+        border-radius: 50px;
+        background: green;
+        padding: 55px; 
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin-top: 25px;
+        text-shadow: 2px 2px;
+        box-shadow: 10px 10px 8px grey;
+        }
+
+        #box2 {
+        border-radius: 30px;
+        background: red;
+        padding: 55px; 
+        width: 450px;
+        height: 200px;
+        float: left;
+        margin-left: 45px;
+        margin-top: 25px;
+        text-shadow: 2px 2px;
+        box-shadow: 10px 10px 8px grey;
+        }
+
+        #box3 {
+        border-radius: 50px;
+        background: yellow;
+        padding: 55px; 
+        width: 300px;
+        height: 200px;
+        float: right;
+        margin-top: 25px; 
+        text-shadow: 2px 2px;
+        box-shadow: 10px 10px 8px grey;
+
+        }
+        </style>
+	</head>
+<body>
+	 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+            <!-- Navbar -->
+            <div class="s-header__navbar">
+                <div class="s-header__container">
+                    <div class="s-header__navbar-row">
+                        <div class="s-header__navbar-row-col">
+                            <!-- Logo -->
+                            <div class="s-header__logo">
+                                <a href="index.html" class="s-header__logo-link">
+                                    <img class="s-header__logo-img s-header__logo-img-default" src="img/logo.png" alt="Tramus Logo">
+                                    <img class="s-header__logo-img s-header__logo-img-shrink" src="img/logo-dark.png" alt="Tramus Logo">
+                                </a>
+                            </div>
+                            <!-- End Logo -->
+                        </div>
+                        <div id="tracked-bus" >   
+
+                        <img src="img/track-logo.png" style="width: 50px; height: 64px; float: right;">
+                        <h4>Track Status:5 stops away</h4>
+                        <h5>Estimate arrival time:15min</h5>   
+                        
+                        <h6>Bus At: raitolem
+                        <span style="float: right;">Your Stop: Chandor</span>  </h6>          
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+
+<form action=addform.php method=post>
+Enter Name:<input type=text name=bus_name required >
+<br><br>
+Enter registration No.<input type=text name=id_registration required >
+<br><br>
+<input type=submit>
+<br><br>
+<input type=reset>
+<br><br>
+<a href="show.php">display</a>
+<br><br>
+<a href="editform.html">edit</a>
+<br><br>
+<a href="delete.html">delete</a>
+<footer class="g-bg-color--dark">
+            <!-- Links -->
+            <div class="g-hor-divider__dashed--white-opacity-lightest">
+                <div class="container g-padding-y-80--xs">
+                    <div class="row">
+                        <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Home</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">About</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">FAQ</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Teams</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Services</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Events</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">YouTube</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="driver-register.html">Register your Bus</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Download Bus APP</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="admin.php">Administrator</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
+                            <h3 class="g-font-size-18--xs g-color--white">Tramus</h3>
+                            <p class="g-color--white-opacity">Somewhere between sophistication and simplicity lies our website that you can use to track your local bus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="container g-padding-y-50--xs">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="index.html">
+                            <img class="g-width-100--xs g-height-auto--xs" src="img/logo.png" alt="Tramus Logo">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 g-text-right--xs">
+                        COPYRIGHT &copy
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright -->
+        </footer>
+    </form>
+        </body>
+</html>
+

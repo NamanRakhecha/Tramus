@@ -1,0 +1,29 @@
+
+
+mysql> select buses.bus_name , stops.stop_name, stops_orders.stop_order from bus
+es inner join stops on buses.stops_id=stops.id join stops_orders on stops_orders
+.stop_id=stops.id where buses.id_reg_no=1;
++----------+----------------+------------+
+| bus_name | stop_name      | stop_order |
++----------+----------------+------------+
+| joliz    | chandor_church |          1 |
++----------+----------------+------------+
+1 row in set (0.02 sec)
+
+mysql> select buses.bus_name , stops.stop_name, stops_orders.stop_order from bus
+es inner join stops on buses.stops_id=stops.id join stops_orders on stops_orders
+.stop_id=stops.id where buses.id_reg_no=1;
+
+
+mysql> select buses.bus_name , stops.stop_name, stops_orders.stop_order, bus_tim
+ing.bus_timings from buses inner join stops on buses.stops_id=stops.id join stop
+s_orders on stops_orders.stop_id=stops.id join bus_timing on bus_timing.bus_id=b
+uses.id_reg_no where buses.id_reg_no=1;
++----------+----------------+------------+-----------------+
+| bus_name | stop_name      | stop_order | bus_timings     |
++----------+----------------+------------+-----------------+
+| joliz    | chandor_church |          1 | 08:12:43.000000 |
++----------+----------------+------------+-----------------+
+1 row in set (0.03 sec)
+
+mysql>
